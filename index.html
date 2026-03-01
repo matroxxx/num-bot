@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Числа и Знаки | Ваш персональный ритм дня (Telegram-бот)</title>
+  <meta name="description" content="Числа и Знаки — Telegram-бот нумеролога: персональный ритм дня, фокус, рекомендации по делам, деньгам и отношениям на основе чисел. Премиум: безлимитное общение с ботом. Тарифы, условия, документы, контакты и реквизиты." />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#111827; --muted:#6b7280; --border:#e5e7eb; --link:#2563eb;
+      --card:#f9fafb; --accent:#eef2ff; --accentBorder:#c7d2fe;
+    }
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 64px;}
+    header{padding-bottom:18px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+    h1{font-size:34px;line-height:1.15;margin:0 0 10px;}
+    .sub{margin:0;color:var(--muted);max-width:850px;}
+    h2{font-size:22px;margin:26px 0 10px;}
+    h3{font-size:18px;margin:18px 0 8px;}
+    p{margin:10px 0;}
+    a{color:var(--link);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px;}
+    @media (min-width:860px){ .grid{grid-template-columns:1.2fr .8fr;} }
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;}
+    .hero{background:linear-gradient(180deg,var(--accent),#fff);border:1px solid var(--accentBorder);border-radius:16px;padding:18px 18px;}
+    .btnrow{margin-top:12px;display:flex;flex-wrap:wrap;gap:10px;}
+    .btn{
+      display:inline-block;padding:11px 14px;border-radius:12px;border:1px solid var(--border);
+      background:#fff;font-weight:700;
+    }
+    .btn.primary{border-color:var(--accentBorder);background:var(--accent);}
+    .pillrow{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--muted);font-size:14px;}
+    ul{margin:8px 0 12px 18px;}
+    li{margin:6px 0;}
+    table{width:100%;border-collapse:collapse;margin-top:8px;}
+    th,td{border:1px solid var(--border);padding:10px;text-align:left;vertical-align:top;}
+    th{background:#f3f4f6;}
+    .muted{color:var(--muted);}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;}
+    .small{font-size:14px;color:var(--muted);}
+    footer{margin-top:28px;color:var(--muted);font-size:14px;}
+    .hr{height:1px;background:var(--border);margin:22px 0;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="hero">
+        <h1>Числа и Знаки — ваш персональный ритм дня</h1>
+        <p class="sub">
+          Telegram-бот помогает быстро понять «настрой дня» на основе чисел: главный фокус,
+          рекомендации по делам и деньгам, отношениям и эмоциям, а также лучшее время дня.
+          <strong>Премиум — безлимитное общение с ботом</strong> на срок тарифа.
+        </p>
+
+        <div class="btnrow">
+          <a class="btn primary" href="https://t.me/chisla_i_znaki_bot" target="_blank" rel="noopener">Открыть Telegram-бота</a>
+          <a class="btn" href="#tariffs">Посмотреть тарифы</a>
+          <a class="btn" href="#docs">Документы</a>
+        </div>
+
+        <div class="pillrow" aria-label="Ключевые преимущества">
+          <span class="pill">🔢 Ритм дня по числу</span>
+          <span class="pill">🧭 Главный фокус и цели</span>
+          <span class="pill">💼 Деньги и реализация</span>
+          <span class="pill">❤️ Отношения и эмоции</span>
+          <span class="pill">⏰ Лучшее время дня</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Как это работает</h2>
+        <ol style="margin:8px 0 12px 18px;">
+          <li>Откройте бота в Telegram: <a href="https://t.me/chisla_i_znaki_bot" target="_blank" rel="noopener">t.me/chisla_i_znaki_bot</a></li>
+          <li>Получите «ритм дня» и рекомендации: фокус, деньги/дела, отношения, точка силы и лучшее время.</li>
+          <li>Используйте подсказки для планирования и осознанных решений в течение дня.</li>
+        </ol>
+        <p class="muted">
+          Сервис оказывает <strong>информационно-консультативные услуги</strong> в электронном виде.
+          Подробные условия — в <a href="offer.html">публичной оферте</a>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Что вы получите</h2>
+        <ul>
+          <li><strong>Персональный ритм дня</strong>: краткий смысл и настрой.</li>
+          <li><strong>Фокус и приоритеты</strong>: на чём лучше держать внимание.</li>
+          <li><strong>Подсказки по делам и деньгам</strong>: когда действовать, а когда анализировать.</li>
+          <li><strong>Поддержку в отношениях</strong>: как проживать эмоции и общаться мягче.</li>
+          <li><strong>Премиум</strong>: безлимитное общение с ботом на срок тарифа.</li>
+        </ul>
+        <p class="small">
+          Важно: ответы носят информационный характер и не являются медицинскими, юридическими или финансовыми консультациями.
+        </p>
+      </div>
+    </section>
+
+    <section id="tariffs" class="card" style="margin-top:12px;">
+      <h2>Тарифы</h2>
+      <p class="muted">
+        Вы можете пользоваться ботом бесплатно с ограничениями, либо оформить премиум-подписку.
+        Перед оплатой в боте отображаются актуальные условия.
+      </p>
+
+      <table aria-label="Тарифы Числа и Знаки">
+        <thead>
+          <tr>
+            <th>Тариф</th>
+            <th>Срок действия</th>
+            <th>Стоимость</th>
+            <th>Что включено</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Премиум на 7 дней</strong></td>
+            <td>7 дней</td>
+            <td><strong>390 ₽</strong></td>
+            <td>Безлимитное общение с ботом в течение 7 дней</td>
+          </tr>
+          <tr>
+            <td><strong>Премиум на 30 дней</strong></td>
+            <td>30 дней</td>
+            <td><strong>990 ₽</strong></td>
+            <td>Безлимитное общение с ботом в течение 30 дней</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="btnrow" style="margin-top:12px;">
+        <a class="btn primary" href="https://t.me/chisla_i_znaki_bot" target="_blank" rel="noopener">Перейти в бот и оформить премиум</a>
+      </div>
+      <p class="small">
+        Оплата производится в безналичной форме. После подтверждения оплаты премиум-доступ активируется автоматически.
+      </p>
+    </section>
+
+    <section class="card" style="margin-top:12px;">
+      <h2>Условия предоставления услуг и возврата</h2>
+      <ul>
+        <li>Услуга предоставляется в электронном виде — доступ к Telegram-боту и его функционалу.</li>
+        <li>Премиум-доступ активируется автоматически после подтверждения оплаты.</li>
+        <li>
+          Возврат денежных средств возможен в случаях и порядке, предусмотренных законодательством РФ
+          и <a href="offer.html">публичной офертой</a>.
+        </li>
+        <li>
+          Для оформления обращения по возврату напишите на
+          <a href="mailto:taro-bot@mail.ru">taro-bot@mail.ru</a>
+          с указанием даты и суммы платежа.
+        </li>
+        <li>Претензионный порядок обязателен. Срок ответа на претензию — до 10 рабочих дней.</li>
+      </ul>
+    </section>
+
+    <section id="docs" class="card" style="margin-top:12px;">
+      <h2>Документы</h2>
+      <ul>
+        <li><a href="offer.html">Публичная оферта</a></li>
+        <li><a href="privacy.html">Политика конфиденциальности</a></li>
+      </ul>
+      <p class="small">
+        Оплачивая подписку и используя сервис, вы подтверждаете согласие с условиями оферты и политикой обработки персональных данных.
+      </p>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Контакты</h2>
+        <p>
+          Поддержка (email): <a href="mailto:taro-bot@mail.ru">taro-bot@mail.ru</a><br />
+          Telegram поддержки: <a href="https://t.me/mirtarohelp" target="_blank" rel="noopener">@mirtarohelp</a><br />
+          Telegram-бот: <a href="https://t.me/chisla_i_znaki_bot" target="_blank" rel="noopener">t.me/chisla_i_znaki_bot</a>
+        </p>
+        <p class="small">
+          Для вопросов по оплате/возврату укажите дату и сумму платежа, а также (если есть) идентификатор платежа.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Реквизиты</h2>
+        <p>
+          Индивидуальный предприниматель Шамсиев Ринат Альбертович<br />
+          ИНН: <span class="mono">590417211206</span><br />
+          ОГРН/ОГРНИП: <span class="mono">320595800057412</span>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© «Числа и Знаки». Информационно-консультативный онлайн-сервис в формате Telegram-бота.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
